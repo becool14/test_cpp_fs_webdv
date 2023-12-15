@@ -1,0 +1,223 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(116, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  padding-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  padding: 0 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  color: #fff;
+  background: inherit;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+  margin-right: 10px; /* зменшений відступ справа від логотипу */
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  padding: 0; /* видалення стандартних відступів */
+  margin: 0; /* видалення стандартних відступів */
+}
+
+nav li {
+  margin-right: 10px; /* зменшений відступ між пунктами меню */
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 14px;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #7b02ae;
+}
+
+.home {
+  text-align: center;
+  padding: 100px 0;
+  color: white;
+}
+
+.banner {
+  font-size: 2.5rem;
+  margin: 100px 0 20px 0;
+}
+
+.slogan {
+  font-size: 1.5rem;
+}
+
+button {
+  text-decoration: none;
+  color: white;
+  background-color: #052d72;
+  padding: 10px 20px;
+  border-radius: 20px;
+  margin-top: 15px;
+  font-size: 1.2rem;
+  transition: background-color 0.3s;
+  border: none;
+}
+
+button:hover {
+  background-color: rgb(104, 9, 121);
+  cursor: pointer;
+}
+
+.question-container {
+  background-color: #f2f2f2a6;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  margin-top: 50px;
+  width: 500px;
+  height: 350px;
+  position: relative;
+}
+
+.question-container button {
+  position: absolute; /* Absolute positioning relative to its parent */
+  bottom: 10px; /* 10px from the bottom of the container */
+  right: 10px; /* 10px from the right of the container */
+  z-index: 2; /* Ensuring it's above other elements within the container */
+}
+
+.question-number {
+  margin: 20px 15px 15px 10px;
+}
+
+.question {
+  font-size: 20px;
+  margin: 0 20px 15px 15px;
+}
+
+.answer {
+  font-size: 18px;
+  margin: 20px 0 10px 10px;
+  padding-bottom: 15px;
+  display: block;
+  max-width: 400px;
+}
+
+.answer {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+#result {
+  text-align: center;
+  font-weight: 400;
+  padding-top: 15px;
+  font-size: 23px;
+}
+
+.result-container h1 {
+  text-align: center;
+  position: relative;
+}
+
+.correct-answers {
+  text-align: center;
+  font-weight: 300;
+  padding-top: 15px;
+  font-size: 20px;
+}
+
+.result-container {
+  width: 1080px; /* Максимальна ширина контейнера */
+  margin: 20px 0 100px 0;
+  padding: 20px; /* Зовнішні відступи контейнера */
+  background-color: #f2f2f2a6; /* Фон контейнера */
+  border: 1px solid #ccc; /* Рамка контейнера */
+  border-radius: 5px; /* Закруглені кути контейнера */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  position: relative;
+  z-index: 1;
+}
+
+ul {
+  list-style: none; /* Видаляємо маркери списку */
+  padding-left: 0;
+  margin-top: 20px; /* Видаляємо внутрішні відступи списку */
+}
+
+/* Стилізація питань li */
+ul li {
+  font-weight: bold; /* Жирний шрифт для питань */
+  margin-bottom: 10px; /* Відступ між питаннями */
+}
+
+/* Стилізація відповідей li */
+ul li ul li {
+  font-weight: normal; /* Звичайний шрифт для відповідей */
+  margin-bottom: 5px; /* Відступ між відповідями */
+}
+
+#question-container {
+  width: 75%;
+  height:75%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+#result-container {
+  width:75%;
+  height:75%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+@media only screen and (max-width: 600px) {
+  .question-container {
+    width: 75%;
+    height:75%;
+}
+
+.result-container {
+  width:75%;
+  height:75%;
+}
+
+  }
+
+
